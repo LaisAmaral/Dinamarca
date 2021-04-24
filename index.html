@@ -1,0 +1,215 @@
+<!-- Disciplina: Linguagem de Script
+Alunas: Lais Jéssica Amaral de Lima,  Mat: 20172370026
+        Raqueline da Silva Gomes,  Mat: 20192370038 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dinamarca</title>
+    <link rel="icon" href="img/icon" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/66b85fa9d0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/master.css">
+</head>
+  
+<!--HEADER-->
+<body>
+ <header>
+      <img src="img/logo1.png" alt="Dinamarca">
+    <nav>
+        <li><a href="#choices1">Principais Cidades</a></li>
+        <li><a href="#tcard">Sugestões</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </nav>
+</header>
+<!--BACKGROUND COM H1 E H3 -->
+<section class="inicio">
+     <h1>Dinamarca │ CP</h1>
+    <h3>A Dinamarca é um país escandinavo que abrange a península Jutlândia e várias ilhas.</h3>
+</section>
+<!--GALERIA DE IMAGENS-->
+
+<section class="choices" id="choices1">
+    <h1>Selecione uma cidade abaixo para obter os pontos turisticos</h1>
+    <select id="city" onchange="showPhoto(value)">
+        <option value="choice"> Escolha... </option>
+        <option value="CP"> Copenhague </option>
+        <option value="AA"> Aarhus </option>
+        <option value="SK"> Skagen </option>
+        <option value="OD"> Odense </option>
+      </select>
+    <div id="imagem">
+      <br>
+      <img scr="img/cp1.jpg" />
+      <img scr="img/cp2.jpg" />
+      <img scr="img/cp3.jpg" />
+      <img scr="img/cp4.jpg" />
+      <img scr="img/aa1.jpg" />
+      <img scr="img/sk1.jpg" />
+      <img scr="img/od1.jpg" />
+    </div>
+    <div id="descricao"></div>
+    <script src="js/main.js"></script>
+</section>
+
+<!--AQUI IMAGENS EM SVG COM INFORS-->
+<section class="infor"> 
+    <h3>Algumas informações sobre: </h3>
+    <hr>
+    <ul class="icone">
+        <li>
+            <img src="img/iconb.svg" alt="">
+            <h4>Coroa Dinamarquesa</h4>
+            <p>Apesar de fazer parte da União Européia, a Dinamarca não tem o Euro como moeda oficial. São usadas as Coroas Dinamarquesas (DKK) e são pouquíssimos os lugares que aceitam Euro.</p>
+        </li>
+        <li>
+            <img src="img/iconc.svg" alt="">
+            <h4>Copenhague</h4>
+            <p>Copenhague, a capital da Dinamarca, fica localizada nas ilhas costeiras de Zelândia e Amager. Ela se liga a Malmö, na parte sul da Suécia, pela Ponte do Øresund.</p>
+        </li>
+        <li>
+            <img src="img/icona.svg" alt="">
+            <h4>Lingua Dinamarquesa</h4>
+            <p>O dinamarquês (dansk) é uma língua germânica do norte falada por cerca de seis milhões de pessoas. Devido à migração e mudança de idioma em áreas urbanas, cerca de 15 a 20% da população da Gronelândia fala o dinamarquês.</p>
+        </li>
+    </ul>
+</section>
+<!--SEÇÃO DE CARDS -->
+<div id="tcard">
+    <h1>Pensando em visitar alguma cidade? Confira algumas sugestões.</h1>
+    <hr>
+</div>
+<div class="cards">
+    <section>
+        <div class="card">
+            <i class="fas fa-umbrella-beach"></i>
+            <h3>Skagen</h3>
+            <p>Skagen é uma cidade marítima localizada no país Dinamarca, bem no extremo norte da ilha de Vendsyssel-Thy e do condado de Nordjutlândia. Skagen possui variás praias bonitas com águas claras e areia branca. Sede o maior porto de pesca da Dinamarca.</p>
+        </div>
+        </section>
+    <section>
+        <div class="card">
+            <i class="fab fa-fort-awesome"></i>
+            <h3>Hillerod</h3>
+            <p>Hillerød é uma cidadezinha de 30 mil habitantes e um dos castelos mais bonitos da Europa. O palácio Frederiksborg foi erguido no centro da cidade no século 17 pelo rei Christian IV. Hoje é um museu que abriga uma grande coleção de pinturas históricas.</p>
+        </div>
+        </section>
+    <section>
+        <div class="card">
+            <i class="fas fa-leaf"></i>
+            <h3>Aarhus</h3>
+            <p>Aarhus é uma cidade da Dinamarca, que fica na costa este da península de Jutlândia, Den Gamle By é um museu ao ar livre da cidade velha, com casas de enxaimel centenárias. Nas proximidades situam-se as estufas do Jardim Botânico de Aarhus.</p>
+        </div>
+        </section>
+    <section>
+        <div class="card">
+            <i class="fas fa-church"></i>
+            <h3>Roskilde</h3>
+            <p>A maior atração da cidade é a Catedral de Roskilde, é a única na ilha da Zelândia, até ao século XX. Seu interior, encontram-se enterrados vários monarcas dinamarqueses. Outra atração turística importante é o Museu de barcos vikings de Roskilde.</p>
+        </div>
+        </section>
+    <section>
+        <div class="card">
+            <i class="fas fa-book"></i>
+            <h3>Odense</h3>
+            <p>Odense está na ilha de Fyn, a aproximadamente 2 horas de Copenhagen, e é outra das cidades mais bonitas da Dinamarca! Se tornou ponto turístico famoso porque foi onde nasceu Hans Christian Andersen, autor de contos de fadas famosos como o Patinho Feio.</p>
+            </div>
+        </section>
+    <section>
+        <div class="card">
+        <i class="fas fa-shopping-cart"></i>
+            <h3>Frederiksberg</h3>
+            <p>Bem ao lado de Copenhagen, a 15 minutos do Centro, está Frederiksberg, o melhor centro de compras da Dinamarca. Embora parecer um bairro perto do Centro de CP, é cidade independente , é pra lá que deve ir se quiser comprar presentes e aproveitar as ofertas!</p>
+        </div>
+        </section>
+    </div>
+
+<!-- <section class="clima">
+    <h1>Como é o clima na Dinamarca?</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Primavera</th>
+          <th>Verão </th>
+          <th>Outono </th>
+          <th>Inverno</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Acontece de março a maio e o clima costuma ser bem variado, as temperaturas são agradáveis durante a primavera, verão e outono, tornando sua viagem muito mais proveitosa e prazerosa.</td>
+          <td>De julho a agosto, com temperaturas em torno dos 25°C, Ou seja, por conta da variação de luz solar, possuí longos dias durante o verão e dias bem curtos durante o inverno.</td>
+          <td>Ocorre de setembro a novembro o clima varia entre ensolarado e chuvoso, O país tem uma média de 700mm de precipitação por ano e o outono (setembro a novembro) é a estação mais chuvosa.</td>
+          <td>De dezembro a fevereiro as temperaturas chegam a niveis muito baixos, como -10°, O seu inverno não é muito frio, tendo como temperaturas médias 0°C. A Dinamarca tem um clima temperado.</td>
+          </tr>
+          <tr>
+            <tr>
+                <td>Entre 15° e 20°</td>
+                <td>Entre 25° e 30°</td>
+                <td>Entre 7° e 10°</td>
+                <td>Entre 5° e 15°</td>
+            </tr>
+          </tr>
+      </tbody>
+    </table>
+</section> -->
+
+
+ <!--MAPA-->
+<section class="midia">
+        <h3>Explore o local</h3>
+        <hr>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.8799856115406!2d12.56595841559942!3d55.67368710555897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652531280f6eaf3%3A0xd9b50b0db50b27b0!2sJardins%20de%20Tivoli!5e0!3m2!1spt-BR!2sbr!4v1578510910862!5m2!1spt-BR!2sbr" width="1430" height="360" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</section>
+<!-- FORMULARIO -->
+<section class="formulario" id="contato">
+    <h2>Quer receber noticias sobre a Dinamarca?</h2>
+    <p>Cadastre-se para receber informações, imagens, avisos sobre eventos e mais!</p>
+    <p>Mande-nos uma mensagem com alguma sugestão! :)</p>
+    <form action="">
+        <div class="form-group nome">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome">
+        </div>
+        <div class="form-group email">
+          <label for="email">E-mail:</label>
+          <input type="text" id="email">
+        </div>
+        <div class="form-group place">
+            <label id="place">Região: </label>
+            <select name="place" id="place">
+            <option value=""></option>
+            <option value="NO">Norte</option>
+            <option value="SUL">Sul</option>
+            <option value="CO">Centro Oeste</option>
+            <option value="SUD">Sudeste</option>
+            <option value="NOR">Nordeste</option>
+        </select>
+        </div>
+        <div>
+          <label for="message">Mensagem:</label><br>
+          <textarea id="mensagem" name="mensage" rows="3" cols="30"></textarea>
+        </div>
+        <input type="submit" name="submit" value="Enviar" class="botao">
+    </form>
+</section>
+<!--FOOTER-->
+    <footer>
+        <section class="social">
+            <ul>
+              <li><a href="https://www.instagram.com/denmarkdotdk/?hl=en" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://twitter.com/denmarkdotdk" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://br.pinterest.com/chelliathus/dinamarca/" target="_blank" class="pinterest"><i class="fab fa-pinterest"></i></a></li>
+              <li><a href="https://github.com/ifpb/lm" target="_blank" class="code"><i class="fas fa-code"></i></a></li>              
+        </ul>     
+   <p>Todos os direitos reservados - Raqueline Gomes</p>
+    </section>    
+    </footer>
+</body>
+</html>
+
+
