@@ -424,16 +424,18 @@ footer p{
         padding: 10px 0 10px 3px;
         line-height: 1.5;
         text-align: center;
+
+    }
+    header nav li{
+        padding: 0px;
+        justify-content: center;
+    }
+    header nav li a{
+        font-size: 20px;
+        text-align: center;
+        border-bottom: 20px; 
     }
 }
-
-@media (min-width: 480px){
-    header{
-        flex-direction: row;
-        padding: 10px 0 10px 3px;
-    }
-}
-
 
 @media (min-width: 375px) {
     header{
@@ -441,6 +443,15 @@ footer p{
         padding: 10px 0 10px 3px;
         line-height: 1.5;
         text-align: center;
+    }
+    header nav li{
+        padding: 0px;
+        justify-content: center;
+    }
+    header nav li a{
+        font-size: 20px;
+        text-align: center;
+        border-bottom: 20px; 
     }
 }
 
@@ -537,7 +548,7 @@ footer p{
         font-size: 2.5rem;
     }
     .inicio h3{
-        font-size: 13px;
+        font-size: 20px;
         line-height: 1.5;
         text-align: center;
         padding: 30px;
@@ -561,7 +572,7 @@ footer p{
         font-size: 2.5rem;
     }
     .inicio h3{
-        font-size: 13px;
+        font-size: 20px;
         line-height: 1.5;
         text-align: center;
         padding: 30px;
@@ -572,10 +583,10 @@ footer p{
 
 @media (min-width: 480px){
     .inicio h1{
-        font-size: 2.5rem;
+        font-size: 3.0rem;
     }
     .inicio h3{
-        font-size: 11px;
+        font-size: 25px;
         padding: 30px;
         padding: 20px 10px 20px 10px;
     }
@@ -587,7 +598,7 @@ footer p{
         font-size: 4rem;
     }    
     .inicio h3{
-        font-size: 11px;
+        font-size: 25px;
     }
 }
 
@@ -596,7 +607,7 @@ footer p{
         font-size: 100px;
     }
     .inicio h3{
-        font-size: 17px;
+        font-size: 25px;
     }
 }
 
@@ -605,7 +616,7 @@ footer p{
         font-size: 130px;
     }
     .inicio h3{
-        font-size: 23px;
+        font-size: 25px;
     }
 }
 
@@ -614,7 +625,7 @@ footer p{
         font-size: 130px;
     }
     .inicio h3{
-        font-size: 23px;
+        font-size: 25px;
     }
 }
 
@@ -676,12 +687,13 @@ footer p{
 /* RESPONSIVIDADE DA CLASSE INFOR */
 @media (min-width: 320px){
     .infor{
-        margin-right: 10%;
+        margin-left: 50%;
     }
     .infor .icone h4{
         font-size: 15px;
     }
     .infor h3{
+        text-align: center;
         font-size: 25px;
         margin-left: 15px;
     }
@@ -689,7 +701,7 @@ footer p{
 
 @media (min-width: 375px){
     .infor{
-        margin-right: 10%;
+        margin-left: 35%;
     }
     .infor .icone h4{
         font-size: 15px;
@@ -745,13 +757,16 @@ footer p{
 @media (min-width: 1025px){
     .infor h3{
         font-size: 30px;
-        margin-left: 155px;
+        margin-right: 50%;
+        text-align: center;
     }
     .infor .icone{
-        width: 105%;
+        width: 145%;
+        margin: 0 80% 0 40%;
+        text-align: center;
     }
     .infor hr{
-        margin-left: 48%;
+        margin-right: 80%;
         width: 200px;
         height: 2px;
     }
@@ -763,13 +778,16 @@ footer p{
 @media (min-width: 1281px){
     .infor h3{
         font-size: 30px;
-        margin-left: 155px;
+        margin-right: 50%;
+        text-align: center;
     }
     .infor .icone{
-        width: 105%;
+        width: 145%;
+        margin: 0 80% 0 40%;
+        text-align: center;
     }
     .infor hr{
-        margin-left: 48%;
+        margin-left: 40%;
         width: 200px;
         height: 2px;
     }
@@ -787,6 +805,12 @@ footer p{
         height: 32rem;
         padding: 4px;
     }
+
+    .tcard h1{
+        margin-right: 50%;
+        
+    }
+
     .card p{
         padding-bottom: 95px;
     }
