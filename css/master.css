@@ -414,7 +414,7 @@ footer p{
     color: bisque;
 }
 
-/* BOOSTRAP */
+/* BOOTSTRAP */
 
 .choices {
     font-family: 'Playfair Display', serif;
@@ -801,20 +801,23 @@ p.choices {
 }
 
 @media (min-width: 1281px){
+    .infor {
+        margin-left: 130px;
+    }
     .infor h3{
         font-size: 30px;
-        margin-left: 155px;
+        margin-left: 100px;
     }
     .infor .icone{
         width: 105%;
     }
     .infor hr{
-        margin-left: 48%;
+        margin-left: 80px;
         width: 200px;
         height: 2px;
     }
     .infor .icone li{
-        padding: 0 10px;
+        padding: 0 20px;
     }
 }
 
@@ -882,16 +885,23 @@ p.choices {
         padding: 0px 40px 0px 50px;
         /* height: 270px; */
         width: 280px;
+        margin-left: 130px;
+    }
+
+    #tcard hr{
+        margin-left: 850px;
+    }
+
+    .carousel-inner{
+        padding-top: 10px;
+    }
+    .carousel-item img {
+        margin-top: 10px;
+        height: 800px;
+        padding: 30px 165px 30px 165px;
     }
 }
 
-@media (min-width: 1281px){
-    .cardes{
-        padding: 0px 40px 0px 50px;
-        /* height: 270px; */
-        width: 280px;
-    }
-}
 /* FIM DA RESPONSIVIDADE DOS CARDS */
 
 /*RESPONSIVIDADE DA TABELA */
