@@ -231,7 +231,7 @@ header li a:hover{
 
 /* CARDS  */
 
-.cards{
+.cardes-box{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -242,13 +242,13 @@ header li a:hover{
     margin-bottom: 5%;
 }
 
-.card{
+.cardes{
    border-radius: 3px;
    background-color: wheat;
    padding: 15px;
 }
 
-.card:hover{
+.cardes:hover{
     background-color:white;
     transition: 2s;
     border-radius: 50px;
@@ -414,6 +414,44 @@ footer p{
     color: bisque;
 }
 
+/* BOOSTRAP */
+
+.choices {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+
+hr.choices {
+    width: 300px;
+    margin: auto;
+    border-width: 5px;
+    height: auto;
+}
+
+p.choices {
+    font-size: 20px;
+}
+
+.carousel-inner{
+    margin-top: 20px;
+    padding: 100px 200px 100px 200px;
+}
+
+.carousel-item img {
+    height: 600px;
+}
+
+.carousel-item p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.carousel-caption {
+    background-color: rgba(255 255 255 / .5);
+}
+
+/* FIM-BOOSTRAP */
+
 /*  RESPONSIVIDADE ↓ */
 
 /* RESPONSIVIDADE DO HEADER */
@@ -424,18 +462,16 @@ footer p{
         padding: 10px 0 10px 3px;
         line-height: 1.5;
         text-align: center;
-
-    }
-    header nav li{
-        padding: 0px;
-        justify-content: center;
-    }
-    header nav li a{
-        font-size: 20px;
-        text-align: center;
-        border-bottom: 20px; 
     }
 }
+
+@media (min-width: 480px){
+    header{
+        flex-direction: row;
+        padding: 10px 0 10px 3px;
+    }
+}
+
 
 @media (min-width: 375px) {
     header{
@@ -443,15 +479,6 @@ footer p{
         padding: 10px 0 10px 3px;
         line-height: 1.5;
         text-align: center;
-    }
-    header nav li{
-        padding: 0px;
-        justify-content: center;
-    }
-    header nav li a{
-        font-size: 20px;
-        text-align: center;
-        border-bottom: 20px; 
     }
 }
 
@@ -548,7 +575,7 @@ footer p{
         font-size: 2.5rem;
     }
     .inicio h3{
-        font-size: 20px;
+        font-size: 13px;
         line-height: 1.5;
         text-align: center;
         padding: 30px;
@@ -572,7 +599,7 @@ footer p{
         font-size: 2.5rem;
     }
     .inicio h3{
-        font-size: 20px;
+        font-size: 13px;
         line-height: 1.5;
         text-align: center;
         padding: 30px;
@@ -583,10 +610,10 @@ footer p{
 
 @media (min-width: 480px){
     .inicio h1{
-        font-size: 3.0rem;
+        font-size: 2.5rem;
     }
     .inicio h3{
-        font-size: 25px;
+        font-size: 11px;
         padding: 30px;
         padding: 20px 10px 20px 10px;
     }
@@ -598,7 +625,7 @@ footer p{
         font-size: 4rem;
     }    
     .inicio h3{
-        font-size: 25px;
+        font-size: 11px;
     }
 }
 
@@ -607,7 +634,7 @@ footer p{
         font-size: 100px;
     }
     .inicio h3{
-        font-size: 25px;
+        font-size: 17px;
     }
 }
 
@@ -616,7 +643,7 @@ footer p{
         font-size: 130px;
     }
     .inicio h3{
-        font-size: 25px;
+        font-size: 23px;
     }
 }
 
@@ -625,13 +652,13 @@ footer p{
         font-size: 130px;
     }
     .inicio h3{
-        font-size: 25px;
+        font-size: 23px;
     }
 }
 
 /* FIM DA RESPONSIVIDADE DA CLASSE INICIO  */
 
-/* REPONSIVIDADE DAS IMAGENS */
+/* REPONSIVIDADE DAS IMAGENS 
 
 @media (min-width: 320px) {
     .galeria p{
@@ -682,18 +709,19 @@ footer p{
         flex-basis: 23%;
     }
 }
+*/
+
 /* FIM DA RESPONSIVIDADE DA GALERIA*/
 
 /* RESPONSIVIDADE DA CLASSE INFOR */
 @media (min-width: 320px){
     .infor{
-        margin-left: 50%;
+        margin-right: 10%;
     }
     .infor .icone h4{
         font-size: 15px;
     }
     .infor h3{
-        text-align: center;
         font-size: 25px;
         margin-left: 15px;
     }
@@ -701,7 +729,7 @@ footer p{
 
 @media (min-width: 375px){
     .infor{
-        margin-left: 35%;
+        margin-right: 10%;
     }
     .infor .icone h4{
         font-size: 15px;
@@ -757,16 +785,13 @@ footer p{
 @media (min-width: 1025px){
     .infor h3{
         font-size: 30px;
-        margin-right: 50%;
-        text-align: center;
+        margin-left: 155px;
     }
     .infor .icone{
-        width: 145%;
-        margin: 0 80% 0 40%;
-        text-align: center;
+        width: 105%;
     }
     .infor hr{
-        margin-right: 80%;
+        margin-left: 48%;
         width: 200px;
         height: 2px;
     }
@@ -778,16 +803,13 @@ footer p{
 @media (min-width: 1281px){
     .infor h3{
         font-size: 30px;
-        margin-right: 50%;
-        text-align: center;
+        margin-left: 155px;
     }
     .infor .icone{
-        width: 145%;
-        margin: 0 80% 0 40%;
-        text-align: center;
+        width: 105%;
     }
     .infor hr{
-        margin-left: 40%;
+        margin-left: 48%;
         width: 200px;
         height: 2px;
     }
@@ -800,79 +822,73 @@ footer p{
 
 /* RESPONSIVIDADE DOS CARDS */
 @media (min-width: 320px){
-    .card{
+    .cardes{
         display: grid;
         height: 32rem;
         padding: 4px;
     }
-
-    .tcard h1{
-        margin-right: 50%;
-        
-    }
-
-    .card p{
+    .cardes p{
         padding-bottom: 95px;
     }
-    .card i{
+    .cardes i{
         padding-top: 20px;
     }
 }
 
-@media (min-width: 375px){
-    .card{
+/* @media (min-width: 375px){
+    .cardes{
         display: grid;
         height: 32rem;
         padding: 4px;
     }
-    .card p{
+    .cardes p{
         padding-bottom: 95px;
     }
-    .card i{
+    .cardes i{
         padding-top: 20px;
     }
 }
 
 @media (min-width: 480px){
-    .card{
+    .cardes{
         display: grid;
         height: 32rem;
         padding: 4px;
     }
-    .card p{
+    .cardes p{
         padding-bottom: 95px;
     }
-    .card i{
+    .cardes i{
         padding-top: 20px;
     }
-}
+} */
 
 @media (min-width: 600px){
-    .card{
+    .cardes{
         padding-left: 25px;
     }
 }
 
 @media (min-width: 870px){
-    .card{
+    .cardes{
         padding: 0px 60px 0px 60px;
-        width: 120px;
-        height: 490px;
+        /* width: 120px; */
+        height: 600px;
     }
 }
 
 @media (min-width: 1260px){
-    .card{
+    .cardes{
         padding: 0px 40px 0px 50px;
-        height: 270px;
+        /* height: 270px; */
         width: 280px;
     }
 }
 
 @media (min-width: 1281px){
-    .card{
+    .cardes{
         padding: 0px 40px 0px 50px;
-        height: 270px;
+        /* height: 270px; */
         width: 280px;
     }
 }
