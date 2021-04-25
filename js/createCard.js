@@ -30,4 +30,3 @@ export async function creatoCard(){
     document.querySelector('.cardes-box').appendChild(section)
   })
 }
-// export default creatoCard;
