@@ -459,9 +459,18 @@ p.choices {
 @media (min-width: 320px) {
     header{
         flex-direction: row;
-        padding: 10px 0 10px 3px;
+        padding: 0px 0 0px 0px;
         line-height: 1.5;
         text-align: center;
+    }
+
+    header nav a{
+        font-size: 15px;
+    }
+
+    header img{
+        margin-left: 10px;
+        width: 53px;
     }
 }
 
@@ -572,16 +581,53 @@ p.choices {
         flex-direction: column;
     }
     .inicio h1{
-        font-size: 2.5rem;
+        font-size: 2rem;
+        margin-right: 35px;
     }
     .inicio h3{
         font-size: 13px;
         line-height: 1.5;
         text-align: center;
+        margin-right: 46px;
         padding: 30px;
         padding: 20px 10px 20px 10px;
     }
-    
+
+    h1.choices{
+        margin-top: 30px;
+    }
+
+    p.choices{
+        font-size: 16px;
+    }
+
+    .infor .icone li {
+        padding: 0 12px;
+        text-align: center;
+        list-style: none;
+        margin-top: -65px;
+        font-size: 13px;
+    }
+
+    #tcard h1{
+        font-size: 20px;
+    }
+
+    #tcard hr{
+        margin-left: 75px;
+    }
+
+    .cardes-box{
+        margin-top: -70px;
+        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        padding: 50px 60px 50px 60px;
+        grid-gap: 3rem;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5%;
+    }
 }
 
 @media (min-width: 375px) {
@@ -605,7 +651,10 @@ p.choices {
         padding: 30px;
         padding: 20px 10px 20px 10px;
     }
-    
+
+    .infor .icone li{
+        margin-top: -65px;
+    }
 }
 
 @media (min-width: 480px){
@@ -645,6 +694,55 @@ p.choices {
     .inicio h3{
         font-size: 23px;
     }
+
+    .infor{
+        margin-top: 50px;
+    }
+
+    .infor .icone li {
+        text-align: center;
+        list-style: none;
+        font-size: 18px;
+        margin-top: 50px;
+    }
+
+
+    #tcard h1{
+        font-size: 30px;
+    }
+
+    .cardes-box{
+        grid-template-columns: 1fr 1fr 1fr;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        padding: 50px 60px 50px 60px;
+        grid-gap: 3rem;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5%;
+    }
+
+    
+    .cardes{
+        padding: 0px 40px 0px 50px;
+        /* height: 270px; */
+        width: 280px;
+        margin-left: 130px;
+    }
+    
+    #tcard hr{
+        margin-left: 850px;
+    }
+    
+    .carousel-inner{
+        padding-top: 10px;
+    }
+
+    .carousel-item img {
+        margin-top: 10px;
+        height: 800px;
+        padding: 30px 163px 30px 155px;
+    }
 }
 
 @media (min-width: 1281px){
@@ -658,61 +756,6 @@ p.choices {
 
 /* FIM DA RESPONSIVIDADE DA CLASSE INICIO  */
 
-/* REPONSIVIDADE DAS IMAGENS 
-
-@media (min-width: 320px) {
-    .galeria p{
-        text-align: center;
-    }
-    .galeria .imagens li.um, .galeria .imagens li.dois{
-        flex-basis: 90%;
-    }
-}
-
-@media (min-width: 375px) {
-    .galeria p{
-        text-align: center;
-    }
-    .galeria .imagens li.um, .galeria .imagens li.dois{
-        flex-basis: 90%;
-    }
-}
-
-@media (min-width: 480px){
-    .galeria p{
-        text-align: center;
-    }
-    .galeria .imagens li.um, .galeria .imagens li.dois{
-        flex-basis: 90%;
-    }
-}
-
-@media (min-width: 801px){
-    .galeria .imagens li.um, .galeria .imagens li.dois{
-        flex-basis: 43%;
-    }
-}
-
-@media (min-width:  1025px){
-    .galeria .imagens li.um{
-        flex-basis: 17%;
-   }
-    .galeria .imagens li.dois{
-        flex-basis: 24%;
-    }
-}
-@media (min-width: 1260px){
-    .galeria .imagens li.um{
-        flex-basis: 19%;
-    }
-    .galeria .imagens li.dois{
-        flex-basis: 23%;
-    }
-}
-*/
-
-/* FIM DA RESPONSIVIDADE DA GALERIA*/
-
 /* RESPONSIVIDADE DA CLASSE INFOR */
 @media (min-width: 320px){
     .infor{
@@ -722,8 +765,13 @@ p.choices {
         font-size: 15px;
     }
     .infor h3{
-        font-size: 25px;
-        margin-left: 15px;
+        margin-top: 20px;
+        font-size: 18px;
+        margin-left: 34px;
+    }
+
+    .infor hr{
+        margin-left: 34px;
     }
 }
 
@@ -835,6 +883,15 @@ p.choices {
     }
     .cardes i{
         padding-top: 20px;
+    }
+
+    .carousel-inner{
+        margin-top: 20px;
+        padding: 0px 27px 0px 27px;
+    }
+    
+    .carousel-item img {
+        height: 200px;
     }
 }
 
