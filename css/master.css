@@ -771,20 +771,31 @@ p.choices {
 
     .inicio h1{
         font-size: 130px;
+        margin-left: 95px;
     }
     .inicio h3{
         font-size: 23px;
+        margin-left: 95px;
     }
 
     .infor{
         margin-top: 50px;
     }
 
+    .infor h3{
+        margin-right: 50px;
+    }
+
+    .infor hr{
+        margin-right: 50px;
+    }
+
     .infor .icone li {
         text-align: center;
         list-style: none;
         font-size: 18px;
-        margin-top: 50px;
+        margin-top: 20px;
+        margin-right: 50px;
     }
 
 
@@ -801,6 +812,7 @@ p.choices {
         align-items: center;
         justify-content: center;
         margin-bottom: 5%;
+        margin-right: 110px;
     }
 
     
