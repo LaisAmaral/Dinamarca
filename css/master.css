@@ -454,8 +454,6 @@ p.choices {
 
 /*  RESPONSIVIDADE ↓ */
 
-/* RESPONSIVIDADE DO HEADER */
-
 @media (min-width: 320px) {
     header{
         flex-direction: row;
@@ -472,104 +470,7 @@ p.choices {
         margin-left: 10px;
         width: 53px;
     }
-}
 
-@media (min-width: 480px){
-    header{
-        flex-direction: row;
-        padding: 10px 0 10px 3px;
-    }
-}
-
-
-@media (min-width: 375px) {
-    header{
-        flex-direction: row;
-        padding: 10px 0 10px 3px;
-        line-height: 1.5;
-        text-align: center;
-    }
-}
-
-@media (min-width: 480px){
-    header{
-        flex-direction: row;
-        padding: 10px 0 10px 3px;
-    }
-}
-
-@media (min-width: 600px){
-    header{
-        flex-direction: column;
-        justify-content: center;
-        padding: 20px 0 10px 0px;
-    }
-    header nav li{
-        padding: 20px;
-        justify-content: center;
-    }
-    header nav li a{
-        font-size: 20px;
-        text-align: center;
-        border-bottom: 20px; 
-    }
-}
-
-@media (min-width: 801px){
-    header img{
-        width: 15rem;
-        margin-bottom: 12px;
-    }
-    header nav li{ 
-        padding: 10px;
-    }
-}
-
-@media (min-width: 1025px){
-    header{
-        display: flex;
-        padding: 20px 6px;
-        width: 98.7%;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    header img{
-        width: 150px;
-    }
-    header nav li{
-        margin: 0 10px;
-    }
-    header li a{
-        font-size: 30px;
-        padding: 7px;
-    }
-}
-
-@media (min-width: 1281px){
-    header{
-        display: flex;
-        padding: 20px 6px;
-        width: 98.7%;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    header img{
-        width: 150px;
-    }
-    header nav li{
-        margin: 0 10px;
-    }
-    header li a{
-        font-size: 30px;
-        padding: 7px;
-    }
-}
-
-
-/* FIM DA RESPONSIVIDADE DO HEADER */
-
-/* RESPONSIVIDADE DA CLASSE INICIO */
-@media (min-width: 320px) {
     .inicio{
         min-height: 90vh;
         min-width: 65vh;
@@ -583,6 +484,9 @@ p.choices {
     .inicio h1{
         font-size: 2rem;
         margin-right: 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .inicio h3{
         font-size: 13px;
@@ -591,6 +495,9 @@ p.choices {
         margin-right: 46px;
         padding: 30px;
         padding: 20px 10px 20px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     h1.choices{
@@ -628,9 +535,57 @@ p.choices {
         justify-content: center;
         margin-bottom: 5%;
     }
+
+    .infor{
+        margin-right: 10%;
+    }
+    .infor .icone h4{
+        font-size: 15px;
+    }
+    .infor h3{
+        margin-top: 20px;
+        font-size: 18px;
+        margin-left: 34px;
+    }
+
+    .infor hr{
+        margin-left: 34px;
+    }
+
+    .cardes{
+        display: grid;
+        height: 32rem;
+        padding: 4px;
+    }
+    .cardes p{
+        padding-bottom: 95px;
+    }
+    .cardes i{
+        padding-top: 20px;
+    }
+
+    .carousel-inner{
+        margin-top: 20px;
+        padding: 0px 27px 0px 27px;
+    }
+    
+    .carousel-item img {
+        height: 200px;
+    }
+
+    .midia iframe{
+        width: 25rem;
+    }
 }
 
 @media (min-width: 375px) {
+    header{
+        flex-direction: row;
+        padding: 10px 0 10px 3px;
+        line-height: 1.5;
+        text-align: center;
+    }
+
     .inicio{
         min-height: 90vh;
         min-width: 65vh;
@@ -643,21 +598,49 @@ p.choices {
     }
     .inicio h1{
         font-size: 2.5rem;
+        margin-right: 140px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .inicio h3{
         font-size: 13px;
         line-height: 1.5;
         text-align: center;
+        margin-right: 147px;
         padding: 30px;
         padding: 20px 10px 20px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .infor .icone li{
         margin-top: -65px;
     }
+
+    .infor{
+        margin-right: 10%;
+    }
+    .infor .icone h4{
+        font-size: 15px;
+    }
+    .infor h3{
+        font-size: 25px;
+        margin-left: 15px;
+    }
+
+    .midia iframe{
+        width: 25rem;
+    }
 }
 
 @media (min-width: 480px){
+    header{
+        flex-direction: row;
+        padding: 10px 0 10px 3px;
+    }
+
     .inicio h1{
         font-size: 2.5rem;
     }
@@ -666,28 +649,126 @@ p.choices {
         padding: 30px;
         padding: 20px 10px 20px 10px;
     }
-    
+
+    .infor{
+        margin-right: 10%;
+    }
+    .infor .icone h4{
+        font-size: 15px;
+    }
+    .infor h3{
+        font-size: 25px;
+        margin-left: 15px;
+    }
+
+    .midia iframe{
+        width: 25rem;
+    }
 }
 
 @media (min-width: 600px){
+    header{
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 0 10px 0px;
+    }
+    header nav li{
+        padding: 20px;
+        justify-content: center;
+    }
+    header nav li a{
+        font-size: 20px;
+        text-align: center;
+        border-bottom: 20px; 
+    }
+
     .inicio h1{
         font-size: 4rem;
     }    
     .inicio h3{
         font-size: 11px;
     }
+
+    .infor h3{
+        font-size: 35px;
+    }
+    .infor hr{
+        margin-left: auto;
+    }
+
+    .cardes{
+        padding-left: 25px;
+    }
+
+    .midia iframe{
+        width: 35rem;
+    }
 }
 
 @media (min-width: 801px){
+    header img{
+        width: 15rem;
+        margin-bottom: 12px;
+    }
+    header nav li{ 
+        padding: 10px;
+    }
+
     .inicio h1{
         font-size: 100px;
     }
     .inicio h3{
         font-size: 17px;
     }
+
+    .infor .icone h4{
+        font-size: 24px;
+        margin-right: 15px;
+    }
+    .infor h3{
+        font-size: 35px;
+        margin-left: 70px;
+    }
+    .infor hr{
+        margin-left: 43%;
+    }
+    .infor .icone{
+        margin-left: 8%;
+    }
+    .infor .icone li{
+        padding: 0 40px;
+    }
+
+    .cardes{
+        padding: 0px 60px 0px 60px;
+        /* width: 120px; 870*/
+        height: 600px;
+    }
+
+    .midia iframe{
+        width: 48rem;
+    }
 }
 
 @media (min-width: 1025px){
+    header{
+        display: flex;
+        padding: 20px 6px;
+        width: 98.7%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header img{
+        width: 150px;
+    }
+    header nav li{
+        margin: 0 10px;
+    }
+    header li a{
+        font-size: 30px;
+        padding: 7px;
+    }
+
     .inicio h1{
         font-size: 130px;
     }
@@ -743,94 +824,11 @@ p.choices {
         height: 800px;
         padding: 30px 163px 30px 155px;
     }
-}
 
-@media (min-width: 1281px){
-    .inicio h1{
-        font-size: 130px;
-    }
-    .inicio h3{
-        font-size: 23px;
-    }
-}
-
-/* FIM DA RESPONSIVIDADE DA CLASSE INICIO  */
-
-/* RESPONSIVIDADE DA CLASSE INFOR */
-@media (min-width: 320px){
-    .infor{
-        margin-right: 10%;
-    }
-    .infor .icone h4{
-        font-size: 15px;
-    }
-    .infor h3{
-        margin-top: 20px;
-        font-size: 18px;
-        margin-left: 34px;
+    .carousel-item p {
+        font-size: 20px;
     }
 
-    .infor hr{
-        margin-left: 34px;
-    }
-}
-
-@media (min-width: 375px){
-    .infor{
-        margin-right: 10%;
-    }
-    .infor .icone h4{
-        font-size: 15px;
-    }
-    .infor h3{
-        font-size: 25px;
-        margin-left: 15px;
-    }
-}
-
-@media (min-width: 480px){
-    .infor{
-        margin-right: 10%;
-    }
-    .infor .icone h4{
-        font-size: 15px;
-    }
-    .infor h3{
-        font-size: 25px;
-        margin-left: 15px;
-    }
-}
-
-@media (min-width: 600px){
-    .infor h3{
-        font-size: 35px;
-    }
-    .infor hr{
-        margin-left: auto;
-    }
-}
-
-@media (min-width: 801px){
-    .infor .icone h4{
-        font-size: 24px;
-        margin-right: 15px;
-    }
-    .infor h3{
-        font-size: 35px;
-        margin-left: 70px;
-    }
-    .infor hr{
-        margin-left: 43%;
-    }
-    .infor .icone{
-        margin-left: 8%;
-    }
-    .infor .icone li{
-        padding: 0 40px;
-    }
-}
-
-@media (min-width: 1025px){
     .infor h3{
         font-size: 30px;
         margin-left: 155px;
@@ -846,9 +844,62 @@ p.choices {
     .infor .icone li{
         padding: 0 10px;
     }
+
+    .cardes{ 
+        padding: 0px 40px 0px 50px;
+        /* height: 270px;  @1260*/
+        width: 280px;
+        margin-left: 130px;
+    }
+
+    #tcard hr{
+        margin-left: 850px;
+    }
+
+    .carousel-inner{
+        padding-top: 10px;
+    }
+    .carousel-item img {
+        margin-top: 10px;
+        height: 800px;
+        padding: 30px 165px 30px 165px;
+    }
+
+    .midia iframe{
+        width: 77rem;
+    }
 }
 
 @media (min-width: 1281px){
+    header{
+        display: flex;
+        padding: 20px 6px;
+        width: 98.7%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header img{
+        width: 150px;
+    }
+    header nav li{
+        margin: 0 10px;
+    }
+    header li a{
+        font-size: 30px;
+        padding: 7px;
+    }
+
+    .inicio h1{
+        font-size: 130px;
+    }
+    .inicio h3{
+        font-size: 23px;
+    }
+
+    .carousel-item p {
+        font-size: 20px;
+    }
+
     .infor {
         margin-left: 130px;
     }
@@ -867,186 +918,8 @@ p.choices {
     .infor .icone li{
         padding: 0 20px;
     }
-}
 
-/*  FIM DA RESPONSIVIDADE DA CLASSE INFOR */
-
-/* RESPONSIVIDADE DOS CARDS */
-@media (min-width: 320px){
-    .cardes{
-        display: grid;
-        height: 32rem;
-        padding: 4px;
-    }
-    .cardes p{
-        padding-bottom: 95px;
-    }
-    .cardes i{
-        padding-top: 20px;
-    }
-
-    .carousel-inner{
-        margin-top: 20px;
-        padding: 0px 27px 0px 27px;
-    }
-    
-    .carousel-item img {
-        height: 200px;
-    }
-}
-
-/* @media (min-width: 375px){
-    .cardes{
-        display: grid;
-        height: 32rem;
-        padding: 4px;
-    }
-    .cardes p{
-        padding-bottom: 95px;
-    }
-    .cardes i{
-        padding-top: 20px;
-    }
-}
-
-@media (min-width: 480px){
-    .cardes{
-        display: grid;
-        height: 32rem;
-        padding: 4px;
-    }
-    .cardes p{
-        padding-bottom: 95px;
-    }
-    .cardes i{
-        padding-top: 20px;
-    }
-} */
-
-@media (min-width: 600px){
-    .cardes{
-        padding-left: 25px;
-    }
-}
-
-@media (min-width: 870px){
-    .cardes{
-        padding: 0px 60px 0px 60px;
-        /* width: 120px; */
-        height: 600px;
-    }
-}
-
-@media (min-width: 1260px){
-    .cardes{
-        padding: 0px 40px 0px 50px;
-        /* height: 270px; */
-        width: 280px;
-        margin-left: 130px;
-    }
-
-    #tcard hr{
-        margin-left: 850px;
-    }
-
-    .carousel-inner{
-        padding-top: 10px;
-    }
-    .carousel-item img {
-        margin-top: 10px;
-        height: 800px;
-        padding: 30px 165px 30px 165px;
-    }
-}
-
-/* FIM DA RESPONSIVIDADE DOS CARDS */
-
-/*RESPONSIVIDADE DA TABELA */
-@media (min-width: 320px){
-    .clima table th, td{
-        font-size: 15px;
-        height: 80px;
-        padding: 10px 0px 10px 0px;
-    }
-}
-
-@media (min-width: 375px){
-    .clima table th, td{
-        font-size: 15px;
-        height: 80px;
-        padding: 10px 0px 10px 0px;
-    }
-}
-
-
-@media (min-width: 480px){
-    .clima table th, td{
-        font-size: 15px;
-        height: 80px;
-        padding: 10px 0px 10px 0px;
-    }
-}
-
-@media (min-width: 1025px){
-    .clima table th{
-        font-size: 20px
-    }
-    .clima table td{
-        padding: 25px;
-    }
-}
-
-@media (min-width: 1281px){
-    .clima table th{
-        font-size: 20px
-    }
-    .clima table td{
-        padding: 25px;
-    }
-}
-/* FIM DA RESPONSIVIDADE DA TABELA */
-
-/* RESPONSIVIDADE DO MAPA */
-@media (min-width: 320px){
-    .midia iframe{
-        width: 25rem;
-    }
-}
-
-@media (min-width: 375px){
-    .midia iframe{
-        width: 25rem;
-    }
-}
-
-@media (min-width: 480px){
-    .midia iframe{
-        width: 25rem;
-    }
-}
-
-@media (min-width: 600px){
-    .midia iframe{
-        width: 35rem;
-    }
-}
-
-@media (min-width: 801px){
-    .midia iframe{
-        width: 48rem;
-    }
-}
-
-@media (min-width: 1260px){
     .midia iframe{
         width: 77rem;
     }
 }
-
-@media (min-width: 1281px){
-    .midia iframe{
-        width: 77rem;
-    }
-}
-/* FIM DA RESPONSIVIDADE DO MAPA */
-/* FIM */
