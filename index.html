@@ -31,6 +31,7 @@ Alunas: Lais Jéssica Amaral de Lima,  Mat: 20172370026
 </header>
 
 <section class="inicio">
+    <p id="hora-data">  </p>
     <h1>Dinamarca │ CP</h1>
     <h3>A Dinamarca é um país escandinavo que abrange a península Jutlândia e várias ilhas.</h3>
 </section>
@@ -38,7 +39,7 @@ Alunas: Lais Jéssica Amaral de Lima,  Mat: 20172370026
 <!--GALERIA DE IMAGENS-->
 <h1 class="choices"> Castelos e Palácios </h1>
 <hr class="choices">
-<p class="choices">Selecione uma cidade abaixo para obter os pontos turisticos</h1>
+<p class="choices">Principais Cidades</h1>
 
 <div id="carousel-photos" class="carousel carousel-dark slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -171,6 +172,12 @@ Alunas: Lais Jéssica Amaral de Lima,  Mat: 20172370026
     <script type='module'>
         import {creatoCard} from './js/createCard.js'
         creatoCard()
+    </script>
+
+    <script type='module'>
+        import {clock} from './js/clock.js'
+        clock()
+        setInterval(() => clock(),5000)
     </script>
 </body>
 </html>
