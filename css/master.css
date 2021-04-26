@@ -58,8 +58,6 @@ header li a:hover{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
-    font-family: 'Quicksand', sans-serif; 
     text-align: center;
 }
 
@@ -84,12 +82,30 @@ header li a:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
 }
+
+.inicio #hora-data{
+    margin-right: auto;
+    margin-left: auto;
+    padding: 8px;
+    opacity: 0.9;
+    background: #f3f3f3;
+    font-family: 'Quicksand', sans-serif; 
+    border-radius: 5px;
+}
+
+.inicio #hora-data:hover{
+    background-color: #b4b4b4b0;
+}
+
 
 .inicio h1{
     font-family: 'Playfair Display', serif;
     font-size: 150px;
-    color: #ffffff;  
+    color: #ffffff;
+    margin-bottom: 40px;
 }
 /* ANIMAÇÃO NO H1 */
 .inicio h1{
@@ -117,76 +133,6 @@ header li a:hover{
     padding: 20px 40px;
 }
 
- /* IMAGENS COM TRANSIÇÃO */
-.galeria{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 100px 50px;
-}
-
-.galeria h2{
-    font-family: 'Playfair Display', serif;
-    font-size: 30px;
-    margin-bottom: 35px;
-}
-
-.galeria p{
-    max-width: 800px;
-    margin-bottom: 35px;
-    color: #000000;   
-}
-
-.galeria hr{
-    width: 200px;
-    height: 2px;
-    background-color: #000000;
-    margin-bottom: 70px;
-}
-
-.galeria .imagens{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.galeria .imagens li{
-    height: 350px;
-    padding: 20px;
-    background-clip: content-box;
-    background-size: cover;
-    background-position: center;
-    list-style: none;  
-}
-
-.galeria .imagens li.um{
-    flex-basis: 30%;
-}
-.galeria .imagens li.dois{
-    flex-basis: 40%;
-}
-
-.galeria .imagens li.um{
-    transition: transform 1s;
-    will-change: scale;
-}
-  
-.um:hover{
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-}
-  
-.galeria .imagens li.dois{
-    transition: transform 1s;
-    will-change: scale;
-  }
-
-.dois:hover{
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-}
   /* INFORMAÇÕES */
 .infor{
     display: flex;
